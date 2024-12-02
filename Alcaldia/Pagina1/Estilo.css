@@ -1,0 +1,531 @@
+body {
+    	padding-inline-start: 0%;
+		padding-left: 5%;
+		padding-right: 5%;
+	
+	
+	  font-family: Helvetica, Arial, sans-serif;
+	  background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)) ;
+	  
+	  font-size: 1em;
+	  line-height: 1.5em;
+
+      padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
+}
+
+ h1 {
+
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 200%;
+	color: rgb(0, 0, 0);
+	text-align: center;
+ }
+h3 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+	text-align: center;
+
+}
+
+ 
+
+
+#main-header {
+    color: rgb(0, 0, 0);
+    height: 80px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: space-between; /* Espacio entre logo y navegación */
+    background-image: url("Fondo.jpg"); /* Establecer la imagen de fondo */
+    background-size: cover; /* Cubrir todo el encabezado */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    z-index: 1000;
+}
+
+#main-header a {
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+#logo-header {
+    display: flex;
+    flex-direction: row; /* Colocar el nombre y la descripción en columna */
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+.site-info {
+    padding: 10.2rem 0rem;
+}
+
+#logo-header .site-name {
+    display: block;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+#logo-header .site-desc {
+    display: block;
+    font-weight: 600;
+    font-size: 0.8em;
+    color: rgb(0, 0, 0);
+}
+
+.Logo-image {
+  
+    padding: 9rem 0.5rem;
+    height: 90px; /* Ajusta la altura según sea necesario */
+}
+
+.navigation {
+    padding: 0 2rem;
+    display: flex;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0.5rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+    background-color: #fff200;
+}
+
+ 
+
+
+/*
+ * Logo
+ */
+#logo-header {
+	   float: left;
+     	padding: 15px 0 0 20px;
+	  text-decoration: none;
+}
+	#logo-header:hover {
+		color: #000000;
+	}
+	
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #000000;
+	}
+     
+   
+
+
+
+
+marquee {
+    
+			color: rgb(0, 0, 0);
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			background-color: rgb(248, 145, 10);
+			  
+	  }
+				 
+		
+	  #redes-sociales {
+		width: auto;
+		height: auto;
+		position: fixed;
+		left: 20px;
+		top: 60%;
+		margin: -75px 0 0 -75px;
+		list-style: none;
+		font-size: 200%;
+		transform: rotate(90deg);
+	}
+	
+	#redes-sociales:not(:target)>a:first-of-type,
+	#redes-sociales:target>a:last-of-type {
+		opacity: 1;
+		z-index: 1;
+	}
+	
+	#redes-sociales:not(:target)>.fa-chevron-right:before,
+	#redes-sociales:target>.fa-chevron-left:before {
+		opacity: 1;
+	}
+	
+	.menu-button {
+		opacity: 0;
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin: -75px 0 0 -75px;
+		border-radius: 50%;
+		background: #191919;
+		background-size: 100%;
+		overflow: hidden;
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transform: rotate(-90deg);
+	}
+	
+	#redes-sociales .fa-chevron-left {
+		color: #fff;
+		font-size: 22px;
+		margin-left: 30px;
+	
+		-webkit-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}
+	
+	#redes-sociales .fa-chevron-right {
+		color: #fff;
+		font-size: 22px;
+		margin-left: 30px;
+	
+		-webkit-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}
+	
+	.menu-item {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		left: 55%;
+		line-height: 5px;
+		margin: -50px 0 0 -55px;
+		border-radius: 50%;
+		background: #191919;
+		z-index: -2;
+		transition: all 0.3s ease-out;
+	}
+	
+	.menu-item a {
+		color: #fff;
+		position: relative;
+		display: block;
+		transform: rotate(-90deg);
+		margin: auto;
+		font-size: 20px;
+	}
+	
+	#redes-sociales:target>.menu-item:nth-child(6) {
+		transform: rotate(60deg) translateY(-120px) rotate(300deg);
+		transition-delay: 0s;
+	}
+	
+	#redes-sociales:target>.menu-item:nth-child(5) {
+		transform: rotate(20deg) translateY(-120px) rotate(-20deg);
+		transition-delay: 0.1s;
+	}
+	
+	#redes-sociales:target>.menu-item:nth-child(3) {
+		transform: rotate(-20deg) translateY(-120px) rotate(20deg);
+		transition-delay: 0.2s;
+	}
+	
+	#redes-sociales:target>.menu-item:nth-child(4) {
+		transform: rotate(-60deg) translateY(-120px) rotate(60deg);
+		transition-delay: 0.3s;
+	}
+	
+	.menu-item.item-facebook {
+		background: #3b5998;
+		
+	
+	}
+	
+	.menu-item.item-facebook:hover {
+		box-shadow: 5px 0 20px #3b5998;
+	}
+	
+	.menu-item.item-instagram {
+		background: radial-gradient(circle at 100% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) #d6249f;
+	}
+	
+	.menu-item.item-instagram:hover {
+		box-shadow: 5px 0 20px #fd5949;
+	}
+	
+	.menu-item.item-twiter {
+		background: #55acee;
+	}
+	
+	.menu-item.item-twiter:hover {
+		box-shadow: 5px 0 20px #55acee;
+		
+	}
+	
+	.menu-item.item-cel {
+		background: #4dc247;
+	}
+	
+	.menu-item.item-cel:hover {
+		box-shadow: 5px 0 20px #4dc247;
+	}
+
+.aaa {
+  font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #000000;
+}
+
+
+
+.divLB
+				{
+
+					display: block;
+					 
+					 
+				     padding-top: 4%;
+					 background-image: url(PalacioM.jpg);
+					 background-size: cover;
+                     background-repeat: no-repeat;
+                    
+				}
+				
+				
+				
+				
+	
+	
+
+	
+	#carrusel-caja {
+		
+		-moz-animation: automatizacion 12s infinite linear;
+		-o-animation: automatizacion 12s infinite linear;
+		-webkit-animation: automatizacion 12s infinite linear;
+		animation: automatizacion 12s infinite linear;
+		-webkit-transition: all 0.55s ease;
+		-moz-transition: all 0.55s ease;
+		-ms-transition: all 0.55s ease;
+		-o-transition: all 0.55s ease;
+		transition: all 0.55s ease;
+		height: 500px;
+		width: 300%;
+	}
+	#carrusel-contenido {
+		margin: 0 auto;
+		overflow: hidden;
+		text-align: left;
+	}
+	.imagenes{
+		height: 500px;
+		width: 100%;
+	}
+	.carrusel-elemento {
+		float: left;
+		width: 33.333%;
+	}
+	@-moz-keyframes automatizacion {
+		0% {
+			margin-left: 0;
+		}
+		30% {
+			margin-left: 0;
+		}
+		35% {
+			margin-left: -100%;
+		}
+		65% {
+			margin-left: -100%;
+		}
+		70% {
+			margin-left: -200%;
+		}
+		95% {
+			margin-left: -200%;
+		}
+		100% {
+			margin-left: 0;
+		}
+	}
+	@keyframes automatizacion {
+		0% {
+			margin-left: 0;
+		}
+		30% {
+			margin-left: 0;
+		}
+		35% {
+			margin-left: -100%;
+		}
+		65% {
+			margin-left: -100%;
+		}
+		70% {
+			margin-left: -200%;
+		}
+		95% {
+			margin-left: -200%;
+		}
+		100% {
+			margin-left: 0;
+		}
+	}
+	@keyframes automatizacion {
+		0% {
+			margin-left: 0;
+		}
+		30% {
+			margin-left: 0;
+		}
+		35% {
+			margin-left: -100%;
+		}
+		65% {
+			margin-left: -100%;
+		}
+		70% {
+			margin-left: -200%;
+		}
+		95% {
+			margin-left: -200%;
+		}
+		100% {
+			margin-left: 0;
+		}
+	}
+	
+	
+
+    
+    .Tituloo {
+        padding-top: 1%;
+		background-color: rgb(72, 120, 223) ;
+		padding-bottom:1% ;
+	}
+
+
+
+
+     .misionn {
+          font-size:  130%; ;
+           text-align: center;
+	      color: rgb(0, 0, 0);
+          background-color:  rgb(250, 250, 250);
+		  padding-left: 1%;
+		  padding-right: 1%;
+		  padding-top: 1%;
+	 }
+
+
+   
+	 h2 {
+		font-family: 'Times New Roman', Times, serif;
+		 text-align: center;
+ 
+	}
+ 
+  
+	
+ 
+ 
+ 
+ 
+ 
+   .contenido {
+	 padding-top: 1%;
+  
+   
+
+ 
+ 
+   }
+ 
+ 
+   article {
+	background-color: orange;
+	overflow: hidden;
+ 
+   }
+ 
+   section {
+	  padding-top: 9%;
+	  padding-left: 5%;
+	  padding-right: 5%;
+	  padding-bottom: 1%;
+	  display: flex;
+	  flex-direction:  row-reverse;
+	  background-color: white;
+	  font-family: Arial, Helvetica, sans-serif;
+	  overflow: hidden;
+	  
+	  
+   }
+ 
+
+	.h11 {
+
+ background: orange;
+ padding-top: 1%;
+ padding-bottom: 1%;
+
+	}
+  .section11 {
+
+  padding-top: 1%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+  }
+
+
+
+
+
+
+              
+              
+                    /*
+                    *Pie de pagina
+                    */
+
+                    #main-footer {
+                        background: #333;
+                        color: white;
+                        text-align: center;
+                        padding: 20px;
+                        margin-top: 1%;
+						
+                    }
+                        #main-footer p {
+                            margin: 0;
+                        }
+                        
+                        #main-footer a {
+                            color: white;
+							text-decoration: none;
+                        }
+
+
+
